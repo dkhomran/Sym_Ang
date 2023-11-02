@@ -1,0 +1,12 @@
+nelmio_cors:
+    paths:
+        '^/personne/store':
+            allow_origin: ['http://localhost:4200']
+            allow_headers: ['Content-Type', 'Authorization']
+            allow_methods: ['POST']
+            max_age: 3600
+        '^/personne/list':
+            allow_origin: ['http://localhost:4200']
+            allow_headers: ['Content-Type', 'Authorization']
+            allow_methods: ['get']
+            max_age: 3600
