@@ -8,5 +8,20 @@ nelmio_cors:
         '^/personne/list':
             allow_origin: ['http://localhost:4200']
             allow_headers: ['Content-Type', 'Authorization']
-            allow_methods: ['get']
+            allow_methods: ['GET']
+            max_age: 3600
+        '^/personne/delete':
+            allow_origin: [ 'http://localhost:4200' ]
+            allow_headers: [ 'Content-Type', 'Authorization' ]
+            allow_methods: [ 'DELETE' ]
+            max_age: 3600
+        '^/personne/edit/':
+            allow_origin: [ 'http://localhost:4200' ]
+            allow_headers: [ 'Content-Type', 'Authorization' ]
+            allow_methods: [ 'GET' ]
+            max_age: 3600
+        '^/personne/update/':
+            allow_origin: [ 'http://localhost:4200' ]
+            allow_headers: [ 'Content-Type', 'Authorization' ]
+            allow_methods: [ 'POST' ]
             max_age: 3600
